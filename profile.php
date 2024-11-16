@@ -64,7 +64,7 @@ session_start();
               </tr>
               <?php
                require 'newcon.php';   //include connection
-                $data = mysqli_query($link,"SELECT * FROM st_notices WHERE id = '$id'");  //mysql query for specific username            
+                $data = mysqli_query($link,"SELECT * FROM st_notices");  //mysql query for specific username            
                      if($data === FALSE) { 
           die(mysql_error()); // TODO: better error handling
         }
